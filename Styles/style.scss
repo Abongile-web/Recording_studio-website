@@ -43,38 +43,78 @@ body {
 
 //main section
 
-.main, .about {
-    @include flexCenter(column,none);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    width: 80%;
-    color: $black;
-
+.main {
+    #image {
+        text-align: center;
+    }
+    .about {
+        @include flexCenter(column,none);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 0px;
+        width: 80%;
+        color: $black;
+    }
     h1 {
         font-size: 30px;
         color: black;
     }
     #weDo {
         padding-bottom: 20px;
+        text-align: center
+    }
+    .blocks {
+        background-color: aqua;
+        @include flexCenter(row,none);
+        text-align: center
+    }
+} 
+
+//Buttons section
+
+#callToAction {
+    @include flexCenter(row,none);
+    justify-content: space-between;
+    width: 35%;
+    padding: 20px;
+    a {
+        padding: 20px;
+        color: $black;
+        text-decoration: none;
+
+    }
+    #work {
+        border: 1px solid $black;
+        border-radius: 20px;
+        background-color: $black;
+        color: white;
+        &:hover {
+            background-color: white;
+            border: 1px solid $black;
+            color: $black;
+        }
+    }
+    #contact {
+        border: 1px solid $black;
+        border-radius: 20px;
+        &:hover {
+            background-color: $black;
+            color: white;
+        }
     }
 }
 
-.blocks {
-    @include flexCenter(row,none);
-}
+//Footer section
 
-.callToAction {
-    @include flexCenter(row,none);
-    
-    .work, .contact {
-        font-size: 30px;
-        border: 1px solid black;
-        border-radius: 2%;
-        a {
-            color: $black;
-            padding: 20px;
+.footer {
+    @include flexCenter(column,none);
+    padding: 20px;
+    color: $black;
+    a {
+        color: $black;
+        &:hover {
+            color: black;
         }
     }
 }

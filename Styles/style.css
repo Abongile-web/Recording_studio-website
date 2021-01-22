@@ -41,7 +41,11 @@ body {
   text-decoration: none;
 }
 
-.main, .about {
+.main #image {
+  text-align: center;
+}
+
+.main .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,21 +63,23 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 20px 0px;
   width: 80%;
   color: #525252;
 }
 
-.main h1, .about h1 {
+.main h1 {
   font-size: 30px;
   color: black;
 }
 
-.main #weDo, .about #weDo {
+.main #weDo {
   padding-bottom: 20px;
+  text-align: center;
 }
 
-.blocks {
+.main .blocks {
+  background-color: aqua;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,9 +94,10 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: none;
+  text-align: center;
 }
 
-.callToAction {
+#callToAction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,16 +112,66 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: none;
-}
-
-.callToAction .work, .callToAction .contact {
-  font-size: 30px;
-  border: 1px solid black;
-  border-radius: 2%;
-}
-
-.callToAction .work a, .callToAction .contact a {
-  color: #525252;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35%;
   padding: 20px;
+}
+
+#callToAction a {
+  padding: 20px;
+  color: #525252;
+  text-decoration: none;
+}
+
+#callToAction #work {
+  border: 1px solid #525252;
+  border-radius: 20px;
+  background-color: #525252;
+  color: white;
+}
+
+#callToAction #work:hover {
+  background-color: white;
+  border: 1px solid #525252;
+  color: #525252;
+}
+
+#callToAction #contact {
+  border: 1px solid #525252;
+  border-radius: 20px;
+}
+
+#callToAction #contact:hover {
+  background-color: #525252;
+  color: white;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: none;
+  padding: 20px;
+  color: #525252;
+}
+
+.footer a {
+  color: #525252;
+}
+
+.footer a:hover {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
