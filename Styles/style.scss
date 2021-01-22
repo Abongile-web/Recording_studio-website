@@ -1,0 +1,81 @@
+@mixin flexCenter($direction, $background) { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background-color: $background;
+}
+
+@import "./colors.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+//Navigation section
+
+.header {
+    @include flexCenter(row, none);
+    justify-content: space-between;
+    padding: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    .nav {
+        //background-color: aqua;
+        ul {
+            li {
+                display: inline;
+                padding: 40px;
+                a {
+                    color: $black;
+                    &:hover {
+                        color: $grey;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//main section
+
+.main, .about {
+    @include flexCenter(column,none);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 80%;
+    color: $black;
+
+    h1 {
+        font-size: 30px;
+        color: black;
+    }
+    #weDo {
+        padding-bottom: 20px;
+    }
+}
+
+.blocks {
+    @include flexCenter(row,none);
+}
+
+.callToAction {
+    @include flexCenter(row,none);
+    
+    .work, .contact {
+        font-size: 30px;
+        border: 1px solid black;
+        border-radius: 2%;
+        a {
+            color: $black;
+            padding: 20px;
+        }
+    }
+}
+
