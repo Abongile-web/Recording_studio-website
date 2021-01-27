@@ -8,26 +8,27 @@
     <link rel = "icon" href="./Assets/Website icon.png" 
         type = "image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/e9a23594ea.js"></script>
 </head>
 <body>
 
     <!--Header section-->
-
+    <a id="home"></a>
     <div class="header">
         <div class="logo">
             <!--<img src="./Assets/logo.png" alt="logo for vmedia studios">-->
-            <b>Vmedia <br> Studios</b>
+            <a href="#home"><b>Vmedia <br> Studios</b></a>
         </div>
 
         <div class="nav">
             <ul>
-                <li><a href="./index.html" class="active">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./work.html">Work</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#works">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -43,6 +44,7 @@
     </div>
 
     <!--Content section-->
+    <a id="about"></a>
         <!--About page-->
         <div id="about">
 
@@ -60,7 +62,7 @@
                 </p>
             </div>
         </div>
-
+        <a id="services"></a>
         <!--Services page-->
         <div class="services">
             <h1>What we do for you!</h1>
@@ -96,13 +98,15 @@
         </div>
 
         <!--Work page-->
+        <a id="works"></a>
         <div class="work">
             <h1>Listen to our work here:</h1>
 
             <iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/963503830&color=%233c3c3c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/vmediastudios" title="Vmedia Studios" target="_blank" style="color: #cccccc; text-decoration: none;">Vmedia Studios</a> · <a href="https://soundcloud.com/vmediastudios/sets/vmedia-studios-productions" title="Vmedia Studios Productions" target="_blank" style="color: #cccccc; text-decoration: none;">Vmedia Studios Productions</a></div>
         </div>
 
-        <!--Contatc section-->
+        <!--Contact section-->
+        <a id="contact"></a>
         <div class="contact">
             <h1>Contact Us</h1>
             <form action="https://formspree.io/f/xzbkyabg" method="POST">
