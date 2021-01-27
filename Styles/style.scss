@@ -21,6 +21,7 @@ body {
     justify-content: space-between;
     padding: 20px;
     width: 90%;
+    height: 10vh;
     margin-left: auto;
     margin-right: auto;
     .nav {
@@ -37,6 +38,38 @@ body {
                     }
                 }
             }
+        }
+    }
+}
+
+//Landing Page section
+.landing_page {
+    background-image: url("/Assets/studio_background.png");
+    height: 90vh;
+    color: white;
+    @include flexCenter(column,none);
+    text-align: center;
+    h1 {
+        font-size: 100px;
+        padding: 30px;
+    }
+    h3 {
+        font-size: 25px;
+        padding: 20px;
+        background-color: rgba(15, 52, 96, 0.7);
+    }
+    #work {
+        border: 1px solid $red;
+        border-radius: 20px;
+        background-color: $red;
+        padding: 15px;
+        margin-top: 20px;
+        color: white;
+        &:hover {
+            background-color: white;
+            border: 1px solid white;
+            color: $navy;
+            text-decoration: none;
         }
     }
 }

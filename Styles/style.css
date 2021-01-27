@@ -23,6 +23,7 @@ body {
           justify-content: space-between;
   padding: 20px;
   width: 90%;
+  height: 10vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -33,11 +34,59 @@ body {
 }
 
 .header .nav ul li a {
-  color: #525252;
+  color: #1a1a2e;
 }
 
 .header .nav ul li a:hover {
   color: #727272;
+  text-decoration: none;
+}
+
+.landing_page {
+  background-image: url("/Assets/studio_background.png");
+  height: 90vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: none;
+  text-align: center;
+}
+
+.landing_page h1 {
+  font-size: 100px;
+  padding: 30px;
+}
+
+.landing_page h3 {
+  font-size: 25px;
+  padding: 20px;
+  background-color: rgba(15, 52, 96, 0.7);
+}
+
+.landing_page #work {
+  border: 1px solid #e94560;
+  border-radius: 20px;
+  background-color: #e94560;
+  padding: 15px;
+  margin-top: 20px;
+  color: white;
+}
+
+.landing_page #work:hover {
+  background-color: white;
+  border: 1px solid white;
+  color: #16213e;
   text-decoration: none;
 }
 
@@ -65,7 +114,7 @@ body {
   margin-right: auto;
   padding: 20px 0px;
   width: 80%;
-  color: #525252;
+  color: #1a1a2e;
 }
 
 .main h1 {
@@ -121,30 +170,30 @@ body {
 
 #callToAction a {
   padding: 20px;
-  color: #525252;
+  color: #1a1a2e;
   text-decoration: none;
 }
 
 #callToAction #work {
-  border: 1px solid #525252;
+  border: 1px solid #1a1a2e;
   border-radius: 20px;
-  background-color: #525252;
+  background-color: #1a1a2e;
   color: white;
 }
 
 #callToAction #work:hover {
   background-color: white;
-  border: 1px solid #525252;
-  color: #525252;
+  border: 1px solid #1a1a2e;
+  color: #1a1a2e;
 }
 
 #callToAction #contact {
-  border: 1px solid #525252;
+  border: 1px solid #1a1a2e;
   border-radius: 20px;
 }
 
 #callToAction #contact:hover {
-  background-color: #525252;
+  background-color: #1a1a2e;
   color: white;
 }
 
@@ -164,11 +213,11 @@ body {
           flex-direction: column;
   background-color: none;
   padding: 20px;
-  color: #525252;
+  color: #1a1a2e;
 }
 
 .footer a {
-  color: #525252;
+  color: #1a1a2e;
 }
 
 .footer a:hover {
