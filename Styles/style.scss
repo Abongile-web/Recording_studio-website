@@ -109,37 +109,60 @@ h1 {
     }
 }
 
-//Buttons section
+//Work section
 
-#callToAction {
-    @include flexCenter(row,none);
-    justify-content: space-between;
-    width: 35%;
+.work {
+    @include flexCenter(column,$navy);
     padding: 20px;
-    a {
-        padding: 20px;
-        color: $black;
-        text-decoration: none;
-
-    }
-    #work {
-        border: 1px solid $black;
-        border-radius: 20px;
-        background-color: $black;
+    h1{
         color: white;
-        &:hover {
-            background-color: white;
-            border: 1px solid $black;
-            color: $black;
-        }
     }
-    #contact {
-        border: 1px solid $black;
-        border-radius: 20px;
-        &:hover {
-            background-color: $black;
-            color: white;
-        }
+    iframe {
+        width: 50%;
+        height: 80vh;
+        padding: 20px
+    }
+}
+
+//Contact section
+
+label, input, textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: $navy;
+}
+
+.contact {
+    text-align: center;
+    padding: 50px;
+    h1 {
+        color: $navy;
+    }
+    input, textarea {
+        border: 2px solid $navy;
+    }
+}
+
+.submit {
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: $navy;
+    background-color: $navy;
+    border: 0;
+    &:hover {
+        background-color: $navy;
+        color: white;
+    }
+}
+#map {
+    width: 100%;
+    text-align: center;
+    iframe {
+        padding: 20px;
+        width: 50%;
+        height: 500px;
     }
 }
 
