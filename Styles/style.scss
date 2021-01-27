@@ -77,21 +77,19 @@ body {
 //main section
 
 .main {
-    #image {
-        text-align: center;
-    }
-    .about {
-        @include flexCenter(column,none);
+    //About section
+    #about {
+        @include flexCenter(row,none);
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        padding: 20px 0px;
-        width: 80%;
-        color: $black;
+        padding: 20px;
+        color: white;
+        background-color: $navy;
     }
     h1 {
-        font-size: 30px;
-        color: black;
+        font-size: 40px;
+        color: $red;
     }
     #weDo {
         padding-bottom: 20px;

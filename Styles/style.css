@@ -90,11 +90,7 @@ body {
   text-decoration: none;
 }
 
-.main #image {
-  text-align: center;
-}
-
-.main .about {
+.main #about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,22 +100,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: none;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px 0px;
-  width: 80%;
-  color: #1a1a2e;
+  padding: 20px;
+  color: white;
+  background-color: #16213e;
 }
 
 .main h1 {
-  font-size: 30px;
-  color: black;
+  font-size: 40px;
+  color: #e94560;
 }
 
 .main #weDo {
