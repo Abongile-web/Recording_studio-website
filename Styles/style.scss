@@ -52,6 +52,7 @@ body {
     h1 {
         font-size: 100px;
         padding: 30px;
+        color: white;
     }
     h3 {
         font-size: 25px;
@@ -76,31 +77,37 @@ body {
 
 //main section
 
-.main {
-    //About section
-    #about {
-        @include flexCenter(row,none);
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 20px;
-        color: white;
-        background-color: $navy;
-    }
+//About section
+#about {
+    @include flexCenter(row,none);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    color: white;
+    background-color: $navy;
+}
+//All Headings H1
+h1 {
+    font-size: 40px;
+}
+
+//Services section
+.services {
+    text-align: center;
+    padding: 20px;
+    color: $black;
     h1 {
-        font-size: 40px;
-        color: $red;
+        color: $black;
     }
-    #weDo {
-        padding-bottom: 20px;
-        text-align: center
+}
+.blocks {
+    @include flexCenter(row,none);
+    text-align: center;
+    .block {
+        padding: 10px;
     }
-    .blocks {
-        background-color: aqua;
-        @include flexCenter(row,none);
-        text-align: center
-    }
-} 
+}
 
 //Buttons section
 

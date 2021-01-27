@@ -66,6 +66,7 @@ body {
 .landing_page h1 {
   font-size: 100px;
   padding: 30px;
+  color: white;
 }
 
 .landing_page h3 {
@@ -90,7 +91,7 @@ body {
   text-decoration: none;
 }
 
-.main #about {
+#about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,18 +114,21 @@ body {
   background-color: #16213e;
 }
 
-.main h1 {
+h1 {
   font-size: 40px;
-  color: #e94560;
 }
 
-.main #weDo {
-  padding-bottom: 20px;
+.services {
   text-align: center;
+  padding: 20px;
+  color: #1a1a2e;
 }
 
-.main .blocks {
-  background-color: aqua;
+.services h1 {
+  color: #1a1a2e;
+}
+
+.blocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,6 +144,10 @@ body {
           flex-direction: row;
   background-color: none;
   text-align: center;
+}
+
+.blocks .block {
+  padding: 10px;
 }
 
 #callToAction {
