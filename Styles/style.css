@@ -178,38 +178,86 @@ h1 {
   padding: 20px;
 }
 
-label, input, textarea {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color: #16213e;
-}
-
 .contact {
-  text-align: center;
-  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: none;
+  padding: 20px;
 }
 
 .contact h1 {
-  color: #16213e;
+  color: #1a1a2e;
 }
 
-.contact input, .contact textarea {
-  border: 2px solid #16213e;
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: none;
+  padding: 20px;
 }
 
-.submit {
-  padding: 8px;
-  border-radius: 10px;
-  font-size: 12px;
-  color: #16213e;
-  background-color: #16213e;
-  border: 0;
+.contact form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: none;
+  color: #1a1a2e;
 }
 
-.submit:hover {
-  background-color: #16213e;
+.contact form label input {
+  width: 100%;
+}
+
+.contact form label textarea {
+  width: 110%;
+}
+
+.contact form button {
+  border: 1px solid #e94560;
+  border-radius: 20px;
+  background-color: #e94560;
+  padding: 15px;
+  margin-top: 20px;
   color: white;
+}
+
+.contact form button:hover {
+  background-color: white;
+  border: 1px solid white;
+  color: #16213e;
+  text-decoration: none;
 }
 
 #map {
