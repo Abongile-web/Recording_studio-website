@@ -12,6 +12,19 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body { 
+    height: auto;
+    overflow-x: hidden; 
 }
 
 
@@ -25,10 +38,11 @@
     height: 10vh;
     margin-left: auto;
     margin-right: auto;
-    position: fixed;
     background-color: white;
     z-index: 2;
     .logo {
+        height: 10vh;
+        @include flexCenter(row,none);
         a {
             color: $black;
             font-weight: 700;
@@ -38,8 +52,10 @@
         }
     }
     .nav {
-        //background-color: aqua;
-        ul {
+        height: 10vh;
+        padding-top: 10px;
+        @include flexCenter(row,none);
+        ul {  
             li {
                 display: inline;
                 padding: 40px;
@@ -53,12 +69,24 @@
             }
         }
     }
+
+    .menu {
+        display: none;
+        button{
+            color: $black;
+            background-color: white;
+            border: 0;
+            font-size: 20px;
+            outline: none;
+        }
+    }
 }
 
 //Landing Page section
 .landing_page {
     background-image: url("/Assets/studio_background.png");
-    height: 100vh;
+    width: 100%;
+    height: 90vh;
     color: white;
     @include flexCenter(column,none);
     text-align: center;
@@ -196,6 +224,97 @@ h1 {
         &:hover {
             color: $grey;
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    //header section
+    .header .nav ul {
+        //display: none;
+        @include flexCenter(column,$navy);
+        margin-top: 100vh;
+        position: absolute;
+        width: 100%;
+        height: 90vh;
+        font-size: 20px;
+        left: 0%;
+        transform: translateX(-100%);
+        transition: transform 0.8s ease-in-out;
+        overflow: hidden;
+        li {
+            a {
+                color: white;
+            }
+        }
+    }
+
+    .header .nav ul.show {
+        transform: translateX(0%);
+    }
+
+    .header .logo {
+        @include flexCenter(row,none);
+        padding-top: 0;
+    }
+
+    .header .menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
+    //landing page section
+    .landing_page {
+        justify-content: space-evenly;
+        height: 90vh;
+        h1 {
+            font-size: 60px;
+            padding: 10px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        #work {
+            font-size: 10px;
+        }
+    }
+
+    //services section
+    .blocks {
+        @include flexCenter(column,none);
+        text-align: center;
+        .block {
+            padding: 10px;
+        }
+    }
+
+    //about section
+    #about {
+        @include flexCenter(column,none);
+        #content {
+            padding-top: 20px;
+        }
+    }
+
+    //services section
+    .block p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    //work section
+    .work iframe {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    //contact section
+    #map iframe {
+        width: 100%;
     }
 }
 
