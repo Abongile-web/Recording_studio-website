@@ -36,6 +36,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px;
+  padding-top: 30px;
   width: 100%;
   height: 10vh;
   margin-left: auto;
@@ -46,20 +47,6 @@ body {
 
 .header .logo {
   height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: none;
 }
 
 .header .logo a {
@@ -74,20 +61,6 @@ body {
 .header .nav {
   height: 10vh;
   padding-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: none;
 }
 
 .header .nav ul li {
@@ -117,7 +90,7 @@ body {
 }
 
 .landing_page {
-  background-image: url("/Assets/studio_background.png");
+  background-image: url("/public/Assets/studio_background.png");
   background-repeat: no-repeat;
   width: 100%;
   height: 90vh;
@@ -395,11 +368,11 @@ h1 {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #16213e;
-    margin-top: 101vh;
     position: absolute;
+    margin-top: 11vh;
     width: 100%;
     height: 90vh;
-    font-size: 20px;
+    font-size: 15px;
     left: 0%;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
@@ -409,8 +382,15 @@ h1 {
     transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
     overflow: hidden;
   }
+  .header .nav ul li {
+    padding: 10%;
+  }
   .header .nav ul li a {
     color: white;
+  }
+  .nav {
+    height: 0;
+    padding: 0;
   }
   .header .nav ul.show {
     -webkit-transform: translateX(0%);
@@ -439,13 +419,14 @@ h1 {
     right: 20px;
   }
   .header {
-    height: 10vh;
+    height: 10%;
+    padding: 5%;
   }
   .landing_page {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    height: 90vh;
+    height: 100vh;
   }
   .landing_page h1 {
     font-size: 60px;
@@ -534,11 +515,11 @@ h1 {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #16213e;
-    margin-top: 172vh;
+    margin-top: 5%;
     position: absolute;
     width: 100%;
-    height: 150vh;
-    font-size: 20px;
+    height: 100%;
+    font-size: 15px;
     left: 0%;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
@@ -547,6 +528,9 @@ h1 {
     transition: transform 0.8s ease-in-out;
     transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
     overflow: hidden;
+  }
+  .header .nav ul li {
+    padding: 2%;
   }
   .header .nav ul li a {
     color: white;
