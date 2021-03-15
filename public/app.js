@@ -16,7 +16,7 @@ $(document).ready(function () {
             status.append('<div>Email is not valid</div>')
         }
 
-        if(subject.length >= 2) {
+        if(subject.length >= 1) {
             status.append('<div>Subject is valid</div>')
         }
         else {
@@ -24,7 +24,7 @@ $(document).ready(function () {
             status.append('<div>Subject is not valid</div>')
         }
 
-        if(message.length >= 10) {
+        if(message.length >= 1) {
             status.append('<div>Message is valid</div>')
         }
         else {
@@ -41,8 +41,5 @@ function menu() {
 
 //menu hide 
 function menu_hide() {
-    //select menu button
     document.querySelector(".nav ul").classList.toggle("show");
-
-
 }
