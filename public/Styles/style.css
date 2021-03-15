@@ -105,6 +105,10 @@ body {
 .landing_page {
   background-image: url("../Assets/studio_background.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 10vh;
   width: 100%;
   height: 90vh;
   color: white;
@@ -177,6 +181,7 @@ body {
   padding: 20px;
   color: white;
   background-color: #16213e;
+  padding-top: 10vh;
 }
 
 h1 {
@@ -187,6 +192,7 @@ h1 {
   text-align: center;
   padding: 20px;
   color: #1a1a2e;
+  padding-top: 10vh;
 }
 
 .services h1 {
@@ -231,6 +237,7 @@ h1 {
           flex-direction: column;
   background-color: #16213e;
   padding: 20px;
+  padding-top: 10vh;
 }
 
 .work h1 {
@@ -259,6 +266,7 @@ h1 {
           flex-direction: column;
   background-color: none;
   padding: 20px;
+  padding-top: 10vh;
 }
 
 .contact h1 {
@@ -382,7 +390,7 @@ h1 {
             flex-direction: column;
     background-color: #16213e;
     position: absolute;
-    margin-top: 11vh;
+    margin-top: 10vh;
     width: 100%;
     height: 90vh;
     font-size: 15px;
@@ -439,10 +447,10 @@ h1 {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    height: 100vh;
+    height: 90vh;
   }
   .landing_page h1 {
-    font-size: 60px;
+    font-size: 40px;
     padding: 10px;
   }
   .landing_page h3 {

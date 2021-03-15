@@ -38,3 +38,11 @@ $(document).ready(function () {
 function menu() {
   document.querySelector(".nav ul").classList.toggle("show");
 }
+
+//menu hide 
+function menu_hide() {
+    //select menu button
+    document.querySelector(".nav ul").classList.toggle("show");
+
+
+}
