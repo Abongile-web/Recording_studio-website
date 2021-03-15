@@ -316,6 +316,7 @@ h1 {
     //about section
     #about {
         @include flexCenter(column,none);
+        padding-top: 5vh;
         #content {
             padding-top: 20px;
         }

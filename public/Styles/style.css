@@ -494,6 +494,7 @@ h1 {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: none;
+    padding-top: 5vh;
   }
   #about #content {
     padding-top: 20px;
