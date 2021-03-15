@@ -33,17 +33,16 @@ body {
 .header {
     @include flexCenter(row, none);
     justify-content: space-between;
-    padding: 20px;
-    padding-top: 30px;
     width: 100%;
     height: 10vh;
-    margin-left: auto;
-    margin-right: auto;
     background-color: white;
+    position: fixed;
     z-index: 2;
     .logo {
         height: 10vh;
-        //@include flexCenter(row,none);
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
         a {
             color: $black;
             font-weight: 700;
@@ -54,12 +53,13 @@ body {
     }
     .nav {
         height: 10vh;
-        padding-top: 10px;
-        //@include flexCenter(row,none);
-        ul {  
+        ul {
+            height: 10vh;
+            display: flex;
+            align-items: center;
             li {
                 display: inline;
-                padding: 40px;
+                padding: 0 40px 0 40px;
                 a {
                     color: $black;
                     &:hover {
